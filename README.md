@@ -46,6 +46,9 @@ DATABASE_HOST=localhost
 DATABASE_PORT=5432
 DATABASE_NAME=ecommerz
 
+# Frontend URL (used for CORS)
+FRONTEND_URL=http://localhost:5173
+
 # Optional (if you prefer to use a single URL)
 DATABASE_URL=postgres://your_db_username:your_db_password@localhost:5432/ecommerz
 ```
