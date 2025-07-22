@@ -33,8 +33,23 @@ Make sure you have installed the following prerequisites before proceeding:
    ````
 
 ## Configuration
+Create a `.env` file in the root directory and add the following environment variables:
 
-Soon!
+```
+# App Port
+PORT=3000
+
+# PostgreSQL Configuration
+DATABASE_USER=your_db_username
+DATABASE_PASSWORD=your_db_password
+DATABASE_HOST=localhost
+DATABASE_PORT=5432
+DATABASE_NAME=ecommerz
+
+# Optional (if you prefer to use a single URL)
+DATABASE_URL=postgres://your_db_username:your_db_password@localhost:5432/ecommerz
+```
+Make sure to replace `your_db_username`, `your_db_password`, and other placeholders with your actual database credentials.
 
 ## Usage
 
