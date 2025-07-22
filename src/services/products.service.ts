@@ -6,10 +6,7 @@ export const findAll = async (query: Query) => {
   const limit = query.limit ? query.limit : 10;
   const offset = (page - 1) * limit;
 
-  console.log("Fetching products with limit:", limit, "and offset:", offset);
-  console.log("Hitted");
-
-  return db.any("SELECT * FROM products ORDER BY id LIMIT $1 OFFSET $2", [limit, offset]);
+  return db.any("SELECT * FROM products ORDER BY created_at DESC LIMIT $1 OFFSET $2", [limit, offset]);
 };
 
 export const findBySku = async (sku: string) => {
