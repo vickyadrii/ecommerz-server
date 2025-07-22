@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
-    "start": "tsx src/index.ts",
+    "start": "tsx src/server.ts",
     "start:prod": "node dist/index.js",
     "build": "tsc",
     "lint": "eslint . --ext .ts,.js",
@@ -20,10 +20,13 @@
   "license": "ISC",
   "packageManager": "pnpm@10.12.1",
   "dependencies": {
-    "fastify": "^5.4.0"
+    "dotenv": "^17.2.0",
+    "fastify": "^5.4.0",
+    "pg-promise": "^11.15.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.31.0",
+    "@types/dotenv": "^8.2.3",
     "@types/node": "^24.0.15",
     "@typescript-eslint/eslint-plugin": "^8.37.0",
     "@typescript-eslint/parser": "^8.37.0",
