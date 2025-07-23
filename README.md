@@ -54,6 +54,24 @@ DATABASE_URL=postgres://your_db_username:your_db_password@localhost:5432/ecommer
 ```
 Make sure to replace `your_db_username`, `your_db_password`, and other placeholders with your actual database credentials.
 
+## Database Setup
+1. <b>Create Database Locally</b>
+   - Ensure you have PostgreSQL installed and running.
+   - Create a database named `ecommerz` using your preferred PostgreSQL client or command line.
+   ```
+   CREATE DATABASE ecommerz;
+   ```
+2. <b>Run Migrations</b>
+   - Use the following command to run the initial migration and set up the database schema:
+   ```bash
+   npm run migrate
+   # or
+   yarn migrate
+   # or
+   pnpm migrate
+   ```
+
+
 ## Usage
 
 Start the Express server:

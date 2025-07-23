@@ -1,0 +1,8 @@
+
+CREATE TABLE IF NOT EXISTS adjustments (
+  id SERIAL PRIMARY KEY,
+  sku TEXT REFERENCES products(sku) ON DELETE CASCADE,
+  qty INTEGER NOT NULL,
+  amount NUMERIC(12,2) NOT NULL,
+  created_at TIMESTAMP DEFAULT NOW()
+);
